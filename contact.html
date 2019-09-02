@@ -12,10 +12,10 @@
     <title>Contact</title>
 </head>
 
-<body>
+<body background="assets/images/floortile.png">
 
     <!--NAVBAR FROM BS-->
-    <div class="container">
+    <div class="container-fluid">
         <header class="bg-dark">
             <div class="row">
                     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -37,7 +37,26 @@
     </div>
     
     <!--MAINLEVEL CONTENT-->
-
+<div class="container mycontainer bg-light mt-10 p-10 border border-info">
+    <div class="row">
+        <div class="col-md-8 col-sm-10 col-xs-12">
+            <form>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First, Last and nickname">
+                </div>
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Who you gonna call?"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
     <!--BS JS LINK-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
