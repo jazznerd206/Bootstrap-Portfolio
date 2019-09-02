@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%;
+}
+
+header, #headerwidth {
+    color: white;
+    background-color: #4aaaa5;
+    position: static;
+}
+
+footer {
+    color: white;
+    background-color: #4aaaa5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.mycontainer {
+    position: relative;
+    top: 5vh;
+}
+
+.image {
+    position: relative;
+}
+
+h4 {
+    position: absolute; /*sets position for project titles, uses jpg for nearest positioned ancestor*/
+    bottom: 20px; /*spacer on bottom of jpg*/
+    width: 320px; /*sets width of title to match jpg*/
+    background-color: #4aaaa5; /*sets background color for title*/
+    text-align: center; /*aligns title text to center*/
+    opacity: .5; /*creates opacity of title so entire picture can be viewed. I love my dog.*/
+}
