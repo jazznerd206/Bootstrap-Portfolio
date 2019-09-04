@@ -36,6 +36,7 @@ footer {
 .image {
     display: block;
     float: left;
+    position: relative;
 }
 
 h4 {
