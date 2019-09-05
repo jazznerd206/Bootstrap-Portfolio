@@ -1,3 +1,4 @@
+/*set the body to fit entire viewport and font style for page*/
 body {
     margin: 0;
     padding: 0;
@@ -6,17 +7,20 @@ body {
     width: 100%;
 }
 
+/*background color for header, sets to scroll with page*/
 header, #headerwidth {
     color: white;
     background-color: #4aaaa5;
     position: static;
 }
 
+/*class styling, nonvisible*/
 .full-width {
     margin: 0, auto;
     padding: 10px;
 }
 
+/*font and background color, sticky footer with centered text*/
 footer {
     color: white;
     background-color: #4aaaa5;
@@ -27,24 +31,21 @@ footer {
     text-align: center;
 }
 
-.container {
-    margin: 0, auto;
-}
-
+/*ancestor used for positioning*/
 .mycontainer {
     position: relative;
     top: 5rem;
     bottom: 5rem;
+    height: 100vh;
 }
 
+/*image containers for positioning*/
 #imagediv {
     position: relative;
-    display: inline;
+    display: block;
+    float: left;
 }
 
-.image {
-    position: absolute;
-}
 
 h4 {
     position: absolute; /*sets position for project titles, uses jpg for nearest positioned ancestor*/
@@ -54,3 +55,10 @@ h4 {
     text-align: center; /*aligns title text to center*/
     opacity: .5; /*creates opacity of title so entire picture can be viewed. I love my dog.*/
 }
+
+/*clearfix, check with Tom before class*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
