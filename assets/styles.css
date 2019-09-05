@@ -29,14 +29,17 @@ footer {
 
 .mycontainer {
     position: relative;
-    top: 5vh;
+    top: 5rem;
+    bottom: 5rem;
 }
-    
+
+#imagediv {
+    position: relative;
+    display: inline;
+}
 
 .image {
-    display: block;
-    float: left;
-    position: relative;
+    position: absolute;
 }
 
 h4 {
