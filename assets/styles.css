@@ -28,9 +28,12 @@ footer {
 }
 
 .mycontainer {
-    position: relative;
+    position: absolute;
     top: 5rem;
     bottom: 5rem;
+    left: 5rem;
+    margin: 0, auto;
+    height: 100vh;
 }
 
 #imagediv {
@@ -38,9 +41,6 @@ footer {
     display: inline;
 }
 
-.image {
-    position: absolute;
-}
 
 h4 {
     position: absolute; /*sets position for project titles, uses jpg for nearest positioned ancestor*/
